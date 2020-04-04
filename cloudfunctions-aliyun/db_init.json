@@ -1,0 +1,65 @@
+{
+	"admin": {
+		"data": [ // 数据
+			{
+				"password": "123456",
+				"username": "admin"
+			}
+		],
+		"index": [{ // 索引
+			"IndexName": "username", // 索引名称
+			"MgoKeySchema": { // 索引规则
+				"MgoIndexKeys": [{
+					"Name": "username", // 索引字段
+					"Direction": "1" // 索引方向，1：ASC-升序，-1：DESC-降序
+				}],
+				"MgoIsUnique": true // 索引是否唯一
+			}
+		}]
+	},
+	"article": {
+		"data": [{
+				"title": "测试数据1",
+				"image": "https://s1.ax1x.com/2020/03/28/Gkl6ld.jpg",
+				"content": "testtesttesttesttesttest",
+				"create_date": "2020/3/23",
+				"delete_date": "0"
+			},
+			{
+				"title": "测试数据2",
+				"image": "https://s1.ax1x.com/2020/03/28/Gkl6ld.jpg",
+				"content": "testtesttesttesttesttest",
+				"create_date": "2020/3/22",
+				"delete_date": "0"
+			},
+			{
+				"title": "测试数据3",
+				"image": "https://s1.ax1x.com/2020/03/28/Gkl6ld.jpg",
+				"content": "testtesttesttesttesttest",
+				"create_date": "2020/3/21",
+				"delete_date": "0"
+			},
+			{
+				"title": "测试数据4",
+				"image": "https://s1.ax1x.com/2020/03/28/Gkl6ld.jpg",
+				"content": "testtesttesttesttesttest",
+				"create_date": "2020/3/20",
+				"delete_date": "0"
+			},
+			{
+				"title": "测试数据5",
+				"image": "https://s1.ax1x.com/2020/03/28/Gkl6ld.jpg",
+				"content": "testtesttesttesttesttest",
+				"create_date": "2020/3/19",
+				"delete_date": "0"
+			},
+			{
+				"title": "测试数据6",
+				"image": "https://s1.ax1x.com/2020/03/28/Gkl6ld.jpg",
+				"content": "testtesttesttesttesttest",
+				"create_date": "2020/3/18",
+				"delete_date": "0"
+			}
+		]
+	}
+}
